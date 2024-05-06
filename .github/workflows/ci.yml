@@ -15,6 +15,7 @@ jobs:
       uses: actions/setup-java@v2
       with:
         java-version: '11' # You can change this to the appropriate Java version
+        distribution: '11'
 
     - name: Run Gradle build
       run: ./gradlew build --console=plain
